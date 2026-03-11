@@ -1,0 +1,28 @@
+function pageLoad()
+{
+document.getElementById("result").innerHTML = "Converted Amount:";
+}
+
+function convertCurrency()
+{
+
+var amount = document.getElementById("amount").value;
+
+var currencyRate = document.getElementById("currency").value;
+
+var result = amount * currencyRate;
+
+document.getElementById("result").innerHTML = "Converted Amount: " + result;
+
+
+/* DOM access examples required in experiment */
+
+var title = document.getElementById("title");
+
+var paragraphs = document.getElementsByTagName("p");
+
+var infoClass = document.getElementsByClassName("info");
+
+var queryExample = document.querySelectorAll("p");
+
+}
